@@ -1,0 +1,63 @@
+﻿<Window x:Class="WpfApplication1.ChooseCategory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ChooseCategory" Height="716" Width="1367" WindowState="Maximized" Loaded="categoryloaded">
+    <Window.Resources>
+
+        <Storyboard  x:Key="box1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="buttonOne">
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:2.0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:2.5" Value="0.5"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:3.0" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+
+        </Storyboard>
+        <Storyboard  x:Key="box2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="buttonTwo">
+                <SplineDoubleKeyFrame KeyTime="0:0:3.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:4.0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:5.0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:5.5" Value="0.5"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.0" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+
+        </Storyboard>
+        <Storyboard  x:Key="box3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="buttonThree">
+                <SplineDoubleKeyFrame KeyTime="0:0:6.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:7.0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:7.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:8.0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:8.5" Value="0.5"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:9.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+
+        </Storyboard>
+        <Storyboard  x:Key="box4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="buttonFour">
+                <SplineDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:10.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:11.5" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:12" Value="0.5"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+
+        </Storyboard>
+
+    </Window.Resources>
+    <Grid Background="#FF74BF71">
+        <TextBlock HorizontalAlignment="Left" Margin="375,30,0,0" TextWrapping="Wrap" Text="Bible Challenge" VerticalAlignment="Top" FontSize="72" FontFamily="Showcard Gothic" Height="91" Width="655"/>
+        <Button x:Name="buttonOne" Content="Button" HorizontalAlignment="Left" Margin="469,190,0,0" VerticalAlignment="Top" Width="433" Height="73" FontSize="36" Click="firstClicked" Opacity="0"/>
+        <Button x:Name="buttonThree" Content="Button" HorizontalAlignment="Left" Margin="469,400,0,0" VerticalAlignment="Top" Width="433" Height="81" FontSize="36" Opacity="0" Click="threeClicked"/>
+        <Button x:Name="buttonTwo" Content="Button" HorizontalAlignment="Left" Margin="469,306,0,0" VerticalAlignment="Top" Width="433" Height="66" FontSize="36" Opacity="0" Click="twoClicked"/>
+        <Button x:Name="buttonFour" Content="Button" HorizontalAlignment="Left" Margin="469,524,0,0" VerticalAlignment="Top" Width="433" Height="74" FontSize="36" Opacity="0" Click="fourClicked"/>
+        <TextBlock x:Name="txtList" HorizontalAlignment="Left" Margin="10,440,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48"/>
+
+
+    </Grid>
+</Window>

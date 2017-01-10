@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApplication1.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Bible Challenge" 
+        Height="716.437" 
+        Width="1346.671" 
+        WindowState="Maximized" 
+        
+        Icon="bible-icon-1.png">
+    <Grid Background="#FF75C335">
+        <TextBlock Margin="502,10,0,0" TextWrapping="Wrap" Text="Ruiru EAM" FontSize="72" Foreground="#FFF5EFEF" FontFamily="Pristina" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Margin="502,109,0,0" Source="bible-icon-1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="352"/>
+        <TextBlock Margin="0,500,436,119" TextWrapping="Wrap" Text="Bible Challenge" RenderTransformOrigin="0.5,0.5" FontSize="48" Foreground="#FFF9F1F1" FontFamily="Forte" HorizontalAlignment="Right" Width="387" VerticalAlignment="Center">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.142"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="931,567,0,0" VerticalAlignment="Top" Width="169" Height="90" FontSize="48" FontFamily="Forte" Foreground="#FF54CB3A" Click="nextClicked"/>
+
+    </Grid>
+</Window>

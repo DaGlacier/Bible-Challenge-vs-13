@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApplication1.BonusQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BonusQuestion" Height="716" Width="1367" WindowState="Maximized" Loaded="bonusLoaded">
+    <Grid Background="#FF75C335">
+        <TextBlock x:Name="tekbok" HorizontalAlignment="Left" Margin="331,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="711" FontSize="72" FontFamily="Showcard Gothic" Foreground="#FFF1EBEB" Text="Bonus Question"/>
+        <TextBlock x:Name="txtblockQuestion" HorizontalAlignment="Left" Margin="210,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="283" Width="1019" Foreground="White" FontSize="36"><Run Text="This is because"/><Run Text=" during the positive half cycle of the diode was forward biased but during the negative half cycle the diode was reverse biased hence the output shown on the oscilloscope."/></TextBlock>
+        <TextBlock x:Name="txtblockAnswer" TextWrapping="Wrap" Text="Answer" Margin="572,558,614,69" FontSize="36" RenderTransformOrigin="0.5,0.5" FontFamily="Showcard Gothic" Foreground="#FFFDF9F9" Visibility="Collapsed"/>
+        <Button Content="Correct" HorizontalAlignment="Left" Margin="94,445,0,0" VerticalAlignment="Top" Width="242" Height="116" FontSize="48" Click="btnBlueCorrect"/>
+        <Button Content="Correct" HorizontalAlignment="Left" Margin="1077,455,0,0" VerticalAlignment="Top" Width="220" Height="102" FontSize="48"/>
+        <Button Content="Wrong" HorizontalAlignment="Left" Margin="94,570,0,0" VerticalAlignment="Top" Width="242" Height="102" FontSize="48"/>
+        <Button Content="Wrong" HorizontalAlignment="Left" Margin="1080,566,0,0" VerticalAlignment="Top" Width="217" Height="102" FontSize="48"/>
+        <Button Content="Answer" HorizontalAlignment="Left" Margin="534,422,0,0" VerticalAlignment="Top" Width="186" FontSize="36" Foreground="#FFF9F5F5" Background="#FFC9BB34" Height="96" Click="answerClicked"/>
+        <Label Content="Score:" HorizontalAlignment="Left" Margin="6,363,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Showcard Gothic" Width="248"/>
+
+    </Grid>
+</Window>
